@@ -20,7 +20,8 @@ def merge_sort(linked_list):
 
 
 def split(linked_list):
-    """Divide the unsorted list at midpoint into sublist"""
+    """Divide the unsorted list at midpoint into sublist
+    Takes o(K log n) time"""
 
     if linked_list is None or linked_list.head is None:
         left_half = linked_list
