@@ -5,7 +5,9 @@ def merge_sort(linked_list):
     """sorts a linked list in ascending order
     -Recursively divide the linked list into sublist containing a single node
     -Repeatedly merge the sublist to produce sorted sublist until one remains
-    returns a sorted linked list"""
+    returns a sorted linked list
+
+    Runs in o(kn log n)"""
 
     if linked_list.size() == 1:
         return linked_list
@@ -44,7 +46,8 @@ def split(linked_list):
 
 def merge(left, right):
     """Merges two linked list, sorting by data in nodes
-    Returns a new, merged list"""
+    Returns a new, merged list
+    runs in linear time"""
 
     # Create a new linked list that contains nodes from
     # merging left and right
